@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .bigText {
+        font-size: 36px;
+        text-align: center;
+        display: none;
+      }
+      .fadeIn {
+        animation-name: fadeIn;
+        animation-duration: 1s;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>한번더 눌러주세요</h1>
+    <p class="bigText fadeIn">만두 바보</p>
+    <script>
+      document.querySelector("h1").addEventListener("click", function() {
+        document.querySelector(".bigText").style.display = "block";
+      });
+    </script>
+  </body>
+</html>

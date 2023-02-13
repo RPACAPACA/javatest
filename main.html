@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .bigText {
+        font-size: 36px;
+        text-align: center;
+        display: none;
+      }
+      .fadeIn {
+        animation-name: fadeIn;
+        animation-duration: 1s;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>눌러보세요</h1>
+    <script>
+      document.querySelector("h1").addEventListener("click", function() {
+        window.location.href = "mandubabo.html";
+      });
+    </script>
+  </body>
+</html>
